@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>Prime Joias</title>
+
+<!-- Favicon com ícone de joia -->
+<link rel="icon" href="https://cdn-icons-png.flaticon.com/512/5506/5506464.png" type="image/png">
+
+<style>
+body {
+    font-family: Segoe UI, Arial;
+    background: #f8f8f8;
+    padding: 20px;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    gap: 10px;
+}
+
+h1 {
+    margin: 0;
+}
+
+/* Ícone de busca */
+.search-icon {
+    width: 24px;
+    height: 24px;
+    fill: #333;
+}
+
+/* Campo de busca */
+#search-box {
+    display: block;
+    margin: 0 auto 30px auto;
+    padding: 10px 15px;
+    width: 300px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+/* Accordion */
+.accordion {
+    background-color: #fff;
+    color: #333;
+    cursor: pointer;
+    padding: 15px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 20px;
+    transition: 0.3s;
+    border-radius: 8px;
+    margin-top: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.active, .accordion:hover {
+    background-color: #eee;
+}
+
+.panel {
+    padding: 0 15px 15px 15px;
+    display: none;
+    overflow: hidden;
+}
+
+/* Grid de produtos */
+.catalogo {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 20px;
+    margin-top: 15px;
+}
+.card {
+    background: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+.card img:hover {
+    transform: scale(1.05);
+}
+.info {
+    padding: 15px;
+    text-align: center;
+}
+.preco-por {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.codigo {
+    font-size: 13px;
+    color: #666;
+    margin-bottom: 10px;
+}
+.whatsapp-btn {
+    display: block;
+    text-decoration: none;
+    background-color: #25D366;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 8px;
+    font-weight: bold;
+    margin: 0 auto 10px auto;
+    text-align: center;
+}
+.whatsapp-btn:hover {
+    opacity: 0.9;
+}
+
+/* Lightbox */
+#lightbox {
+    position: fixed;
+    display: none;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0,0,0,0.8);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+#lightbox img {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 12px;
+}
+#lightbox span {
+    position: absolute;
+    top: 20px;
+    right: 40px;
+    font-size: 40px;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+}
+</style>
+</head>
+<body>
+
+<header>
+    <h1>Prime Joias</h1>
+    <!-- Ícone de lupa -->
+    <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+        <path d="M21.71 20.29l-3.388-3.387A8.959 8.959 0 0018 10c0-4.963-4.037-9-9-9s-9 4.037-9 9 4.037 9 9 9a8.959 8.959 0 006.903-2.677l3.388 3.387a1 1 0 001.414-1.414zM4 10c0-3.309 2.691-6 6-6s6 2.691 6 6-2.691 6-6 6-6-2.691-6-6z"/>
+    </svg>
+</header>
+
+<input type="text" id="search-box" placeholder="Buscar por código ou descrição">
+
+{% for categoria, lista in categorias.items() %}
+<button class="accordion">{{ categoria }}</button>
+<div class="panel">
+    <section class="catalogo">
+        {% for p in lista|reverse %}
+        <div class="card" data-nome="{{ p.descricao | lower }}" data-codigo="{{ p.codigo | lower }}">
+            <img src="{{ p.imagem }}" alt="{{ p.descricao }}" onclick="openLightbox(this.src)">
+            <div class="info">
+                <strong>{{ p.descricao }}</strong><br>
+                <div class="codigo">Código: {{ p.codigo }}</div>
+                <div class="preco-por">R$ {{ '%.2f' % p.preco_por }}</div>
+                <a class="whatsapp-btn" href="https://api.whatsapp.com/send?phone=SEU_NUMERO&text=Olá!%20Tenho%20interesse%20neste%20produto:%20{{ p.codigo }}%20-%20{{ p.descricao }}" target="_blank">
+                    WhatsApp
+                </a>
+            </div>
+        </div>
+        {% endfor %}
+    </section>
+</div>
+{% endfor %}
+
+<!-- Lightbox -->
+<div id="lightbox" onclick="closeLightbox()">
+    <span>&times;</span>
+    <img id="lightbox-img">
+</div>
+
+<script>
+// Accordion
+const acc = document.getElementsByClassName("accordion");
+for (let i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        const panel = this.nextElementSibling;
+        panel.style.display = panel.style.display === "block" ? "none" : "block";
+    });
+}
+
+// Busca dinâmica
+const searchBox = document.getElementById('search-box');
+searchBox.addEventListener('input', function() {
+    const termo = this.value.toLowerCase();
+    document.querySelectorAll('.card').forEach(card => {
+        const nome = card.getAttribute('data-nome');
+        const codigo = card.getAttribute('data-codigo');
+        card.style.display = (nome.includes(termo) || codigo.includes(termo)) ? 'flex' : 'none';
+    });
+});
+
+// Lightbox
+function openLightbox(src) {
+    const lb = document.getElementById('lightbox');
+    const img = document.getElementById('lightbox-img');
+    img.src = src;
+    lb.style.display = 'flex';
+}
+function closeLightbox() {
+    document.getElementById('lightbox').style.display = 'none';
+}
+</script>
+
+</body>
+</html>

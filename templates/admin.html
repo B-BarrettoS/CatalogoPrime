@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>Admin - Prime Joias</title>
+<style>
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: #f5f5f5;
+    padding: 20px;
+}
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+form {
+    max-width: 500px;
+    margin: 0 auto 30px auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.1);
+}
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 12px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+button {
+    width: 100%;
+    padding: 12px;
+    background: #000;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+button:hover {
+    opacity: 0.85;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.1);
+}
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+}
+th {
+    background: #f0f0f0;
+}
+a {
+    text-decoration: none;
+    color: #007BFF;
+}
+a:hover {
+    text-decoration: underline;
+}
+</style>
+</head>
+<body>
+
+<h2>Admin - Prime Joias</h2>
+
+{% with messages = get_flashed_messages() %}
+  {% if messages %}
+    <ul style="max-width:500px;margin:0 auto 20px auto;padding:0;list-style:none;">
+    {% for msg in messages %}
+      <li style="background:#d4edda;color:#155724;padding:10px;margin-bottom:5px;border-radius:6px;">{{ msg }}</li>
+    {% endfor %}
+    </ul>
+  {% endif %}
+{% endwith %}
+
+<form method="POST">
+    <h3>{% if produto_editar %}Editar Produto{% else %}Cadastrar Produto{% endif %}</h3>
+    
+    <input type="text" name="imagem" placeholder="Link da imagem" required
+           value="{{ produto_editar.imagem if produto_editar else '' }}">
+    
+    <textarea name="item" placeholder="Item: ID - Descrição\nPreço" required rows="2">{% if produto_editar %}{{ produto_editar.codigo }} - {{ produto_editar.descricao }}
+{{ '%.2f' % produto_editar.preco_por }}{% endif %}</textarea>
+
+    <input type="text" name="categoria" placeholder="Categoria" required
+           value="{{ produto_editar.categoria if produto_editar else '' }}">
+    
+    <button type="submit">{% if produto_editar %}Atualizar{% else %}Cadastrar{% endif %}</button>
+</form>
+
+<table>
+    <thead>
+        <tr>
+            <th>Código</th>
+            <th>Descrição</th>
+            <th>Categoria</th>
+            <th>Preço</th>
+            <th>Ações</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for p in produtos %}
+        <tr>
+            <td>{{ p.codigo }}</td>
+            <td>{{ p.descricao }}</td>
+            <td>{{ p.categoria }}</td>
+            <td>R$ {{ '%.2f' % p.preco_por }}</td>
+            <td>
+                <a href="{{ url_for('admin', editar=p.codigo) }}">Editar</a> |
+                <a href="{{ url_for('deletar', codigo=p.codigo) }}" onclick="return confirm('Deseja deletar este produto?')">Deletar</a>
+            </td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+
+</body>
+</html>
