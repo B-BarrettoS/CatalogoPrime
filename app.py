@@ -7,7 +7,7 @@ app.secret_key = "supersecretkey"  # necessário para session e flash
 ADMIN_USER = "admin"
 ADMIN_PASS = "JB2026"
 
-# Lista de produtos (exemplo)
+# Lista de produtos inicial (exemplo)
 produtos = [
     {
         "codigo": "0001",
@@ -64,8 +64,13 @@ def admin():
     if request.method == "POST":
         imagem = request.form["imagem"]
         item_texto = request.form["item"].split("\n")
+
+        # Código e descrição
         codigo, descricao = item_texto[0].split(" - ")
-        preco_por = float(item_texto[1])
+
+        # Preço: converte vírgula para ponto e multiplica por 2
+        preco_por = float(item_texto[1].replace(",", ".")) * 2
+
         categoria = request.form["categoria"]
 
         if produto_editar:
