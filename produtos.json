@@ -1,0 +1,30 @@
+[
+    {
+        "codigo": "0066103",
+        "descricao": "ANEL PRATA CORACAO DE LADO VAZADO\r",
+        "preco_por": 34.32,
+        "imagem": "https://catalogo.softarte.com.br/imagens/Produtos/0066103.jpg",
+        "categoria": "Aneis"
+    },
+    {
+        "codigo": "0062551",
+        "descricao": "ANEL PRATA SOLITARIO ZIRCONIA CORACAO ROSA ARO TRABALHADO\r",
+        "preco_por": 46.2,
+        "imagem": "https://catalogo.softarte.com.br/imagens/Produtos/0062551.jpg",
+        "categoria": "Aneis"
+    },
+    {
+        "codigo": "0069176",
+        "descricao": "ANEL CHAPA FINA LISA\r",
+        "preco_por": 51.48,
+        "imagem": "https://catalogo.softarte.com.br/imagens/Produtos/0069176.jpg",
+        "categoria": "Aneis"
+    },
+    {
+        "codigo": "0063257",
+        "descricao": "ANEL PRATA ABALOADO LISO\r",
+        "preco_por": 102.96,
+        "imagem": "https://catalogo.softarte.com.br/imagens/Produtos/0063257.jpg",
+        "categoria": "Aneis"
+    }
+]
