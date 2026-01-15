@@ -1,29 +1,30 @@
 from flask import Flask, render_template, request, redirect, url_for, flash, session
+import json
+import os
 
 app = Flask(__name__)
-app.secret_key = "supersecretkey"  # necessário para session e flash
+app.secret_key = "supersecretkey"
 
-# Usuário/admin fixo
 ADMIN_USER = "admin"
 ADMIN_PASS = "JB2026"
 
-# Lista de produtos inicial (exemplo)
-produtos = [
-    {
-        "codigo": "0001",
-        "descricao": "Anel Prata",
-        "preco_por": 150.00,
-        "imagem": "https://catalogo.softarte.com.br/imagens/Produtos/0066103.jpg",
-        "categoria": "Anel"
-    },
-    {
-        "codigo": "0002",
-        "descricao": "Pulseira Prata",
-        "preco_por": 200.00,
-        "imagem": "https://catalogo.softarte.com.br/imagens/Produtos/0066103.jpg",
-        "categoria": "Pulseira"
-    }
-]
+ARQUIVO_PRODUTOS = "produtos.json"
+
+# =========================
+# Funções de persistência
+# =========================
+def carregar_produtos():
+    if os.path.exists(ARQUIVO_PRODUTOS):
+        with open(ARQUIVO_PRODUTOS, "r", encoding="utf-8") as f:
+            return json.load(f)
+    return []
+
+def salvar_produtos(produtos):
+    with open(ARQUIVO_PRODUTOS, "w", encoding="utf-8") as f:
+        json.dump(produtos, f, ensure_ascii=False, indent=4)
+
+# Carrega ao iniciar
+produtos = carregar_produtos()
 
 # =========================
 # Login / Logout
@@ -46,16 +47,14 @@ def login():
 @app.route("/logout")
 def logout():
     session.pop("logado", None)
-    flash("Você saiu do admin.")
     return redirect(url_for("login"))
 
 # =========================
-# Painel Admin
+# Admin
 # =========================
 @app.route("/admin", methods=["GET", "POST"])
 def admin():
     if not session.get("logado"):
-        flash("Faça login para acessar o painel admin.")
         return redirect(url_for("login"))
 
     editar_codigo = request.args.get("editar")
@@ -65,53 +64,53 @@ def admin():
         imagem = request.form["imagem"]
         item_texto = request.form["item"].split("\n")
 
-        # Código e descrição
         codigo, descricao = item_texto[0].split(" - ")
 
-        # Preço: converte vírgula para ponto e multiplica por 2
+        # preço x2 e vírgula brasileira
         preco_por = float(item_texto[1].replace(",", ".")) * 2
 
         categoria = request.form["categoria"]
 
         if produto_editar:
             produto_editar.update({
-                "imagem": imagem,
                 "codigo": codigo,
                 "descricao": descricao,
                 "preco_por": preco_por,
+                "imagem": imagem,
                 "categoria": categoria
             })
-            flash("Produto atualizado com sucesso!")
+            flash("Produto atualizado!")
         else:
             produtos.append({
-                "imagem": imagem,
                 "codigo": codigo,
                 "descricao": descricao,
                 "preco_por": preco_por,
+                "imagem": imagem,
                 "categoria": categoria
             })
-            flash("Produto cadastrado com sucesso!")
+            flash("Produto cadastrado!")
 
+        salvar_produtos(produtos)
         return redirect(url_for("admin"))
 
     return render_template("admin.html", produtos=produtos, produto_editar=produto_editar)
 
 # =========================
-# Deletar produto
+# Deletar
 # =========================
 @app.route("/deletar/<codigo>")
 def deletar(codigo):
     if not session.get("logado"):
-        flash("Faça login para acessar o painel admin.")
         return redirect(url_for("login"))
 
     global produtos
     produtos = [p for p in produtos if p["codigo"] != codigo]
-    flash("Produto deletado com sucesso!")
+    salvar_produtos(produtos)
+    flash("Produto deletado!")
     return redirect(url_for("admin"))
 
 # =========================
-# Página do catálogo
+# Catálogo
 # =========================
 @app.route("/")
 def catalogo():
@@ -121,7 +120,7 @@ def catalogo():
     return render_template("catalogo.html", categorias=categorias)
 
 # =========================
-# Rodar app
+# Run
 # =========================
 if __name__ == "__main__":
     app.run(debug=True)
