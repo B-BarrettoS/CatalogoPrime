@@ -166,5 +166,229 @@
         "preco_por": 33.0,
         "imagem": "https://catalogo.softarte.com.br/imagens/Produtos/0062410.jpg",
         "categoria": "Aneis"
+    },
+    {
+        "codigo": "0067381",
+        "descricao": "ARGOLA PRATA CORACAO MEIA CANA TRES AROS 2CM\r",
+        "preco_por": 85.8,
+        "imagem": "https://catalogo.softarte.com.br/imagens/Produtos/0067381.jpg",
+        "categoria": "Argola"
+    },
+    {
+        "codigo": "0067373",
+        "descricao": "ARGOLA PRATA CORACAO MEIA CANA TRES AROS 3,5CM\r",
+        "preco_por": 154.44,
+        "imagem": "https://catalogo.softarte.com.br/imagens/Produtos/0067373.jpg",
+        "categoria": "Argola"
+    },
+    {
+        "codigo": "0067371",
+        "descricao": "ARGOLA PRATA CORACAO MEIA CANA TRES AROS 4CM\r",
+        "preco_por": 198.0,
+        "imagem": "https://catalogo.softarte.com.br/imagens/Produtos/0067371.jpg",
+        "categoria": "Argola"
+    },
+    {
+        "codigo": "0067370",
+        "descricao": "ARGOLA PRATA NAVETE MEIA CANA TRES AROS 3,5CM\r",
+        "preco_por": 125.4,
+        "imagem": "https://catalogo.softarte.com.br/imagens/Produtos/0067370.jpg",
+        "categoria": "Argola"
+    },
+    {
+        "codigo": "0067376",
+        "descricao": "ARGOLA PRATA SEXTAVADA MEIA CANA TRES AROS 3CM\r",
+        "preco_por": 141.24,
+        "imagem": "https://catalogo.softarte.com.br/imagens/Produtos/0067376.jpg",
+        "categoria": "Argola"
+    },
+    {
+        "codigo": "0064275",
+        "descricao": "ARGOLA PRATA ARTICULADA QUADRADA RENDADA\r",
+        "preco_por": 84.48,
+        "imagem": "https://catalogo.softarte.com.br/imagens/Produtos/0064275.jpg",
+        "categoria": "Argola"
+    },
+    {
+        "codigo": "0064099",
+        "descricao": "ARGOLA PRATA CLICK ARO BOLINHA ZIRCONIA CORACAO\r",
+        "preco_por": 75.24,
+        "imagem": "https://catalogo.softarte.com.br/imagens/Produtos/0064099.jpg",
+        "categoria": "Argola"
+    },
+    {
+        "codigo": "0064020",
+        "descricao": "ARGOLA PRATA CLICK ARO BOLINHAS ZIRCONIA CORACAO\r",
+        "preco_por": 101.64,
+        "imagem": "https://catalogo.softarte.com.br/imagens/Produtos/0064020.jpg",
+        "categoria": "Argola"
+    },
+    {
+        "codigo": "0064029",
+        "descricao": "ARGOLA PRATA CLICK ARO BOLINHAS ZIRCONIA CORACAO CRISTAL\r",
+        "preco_por": 101.64,
+        "imagem": "https://catalogo.softarte.com.br/imagens/Produtos/0064029.jpg",
+        "categoria": "Argola"
+    },
+    {
+        "codigo": "0064101",
+        "descricao": "ARGOLA PRATA CLICK BOLINHAS NO ARO CORACAO VERMELHO ZIRCONIA\r",
+        "preco_por": 73.92,
+        "imagem": "https://catalogo.softarte.com.br/imagens/Produtos/0064101.jpg",
+        "categoria": "Argola"
+    },
+    {
+        "codigo": "0064194",
+        "descricao": "ARGOLA PRATA CLICK BOTA ROSA ARO CRAVEJADO\r",
+        "preco_por": 84.48,
+        "imagem": "https://catalogo.softarte.com.br/imagens/Produtos/0064194.jpg",
+        "categoria": "Argola"
+    },
+    {
+        "codigo": "0064193",
+        "descricao": "ARGOLA PRATA CLICK COBRA ZIRCONIAS OLHO VERDE\r",
+        "preco_por": 68.64,
+        "imagem": "https://catalogo.softarte.com.br/imagens/Produtos/0064193.jpg",
+        "categoria": "Argola"
+    },
+    {
+        "codigo": "0064199",
+        "descricao": "ARGOLA PRATA CLICK CORACAO CRAVEJADO 15MM\r",
+        "preco_por": 101.64,
+        "imagem": "https://catalogo.softarte.com.br/imagens/Produtos/0064199.png",
+        "categoria": "Argola"
+    },
+    {
+        "codigo": "0064187",
+        "descricao": "ARGOLA PRATA CLICK CORACAO LISO ARO CRAVEJADO 11MM\r",
+        "preco_por": 58.08,
+        "imagem": "https://catalogo.softarte.com.br/imagens/Produtos/0064187.jpg",
+        "categoria": "Argola"
+    },
+    {
+        "codigo": "0064129",
+        "descricao": "ARGOLA PRATA CLICK CORACAO LISO E ARO CRAVEJADO 13MM\r",
+        "preco_por": 64.68,
+        "imagem": "https://catalogo.softarte.com.br/imagens/Produtos/0064129.jpg",
+        "categoria": "Argola"
+    },
+    {
+        "codigo": "0063916",
+        "descricao": "ARGOLA PRATA CLICK CORACAO VAZADO CRAVEJADO\r",
+        "preco_por": 87.12,
+        "imagem": "https://catalogo.softarte.com.br/imagens/Produtos/0063916.png",
+        "categoria": "Argola"
+    },
+    {
+        "codigo": "0064410",
+        "descricao": "ARGOLA PRATA CLICK CRAVEJADA G\r",
+        "preco_por": 84.48,
+        "imagem": "https://catalogo.softarte.com.br/imagens/Produtos/0064410.jpg",
+        "categoria": "Argola"
+    },
+    {
+        "codigo": "0065233",
+        "descricao": "ARGOLA PRATA CLICK CRAVEJADA GRANDE\r",
+        "preco_por": 102.96,
+        "imagem": "https://catalogo.softarte.com.br/imagens/Produtos/0065233.jpg",
+        "categoria": "Argola"
+    },
+    {
+        "codigo": "0064408",
+        "descricao": "ARGOLA PRATA CLICK CRAVEJADA P\r",
+        "preco_por": 63.36,
+        "imagem": "https://catalogo.softarte.com.br/imagens/Produtos/0064408.jpg",
+        "categoria": "Argola"
+    },
+    {
+        "codigo": "0065231",
+        "descricao": "ARGOLA PRATA CLICK CRAVEJADA PEQUENO\r",
+        "preco_por": 59.4,
+        "imagem": "https://catalogo.softarte.com.br/imagens/Produtos/0065231.jpg",
+        "categoria": "Argola"
+    },
+    {
+        "codigo": "0063009",
+        "descricao": "CHOKER PRATA ELOS IGUAIS SETE GOTAS PEDRAS TURMALINA\r",
+        "preco_por": 95.04,
+        "imagem": "https://catalogo.softarte.com.br/imagens/Produtos/0063009.jpg",
+        "categoria": "Choker"
+    },
+    {
+        "codigo": "0060086",
+        "descricao": "CHOKER PRATA ELOS IGUAIS SETE OLHO GREGOS AZUL ESCURO PENDURADOS\r",
+        "preco_por": 85.8,
+        "imagem": "https://catalogo.softarte.com.br/imagens/Produtos/0060086.jpg",
+        "categoria": "Choker"
+    },
+    {
+        "codigo": "0062977",
+        "descricao": "CHOKER PRATA ELOS IGUAIS SETE PEDRAS PRETAS GOTAS EXTENSOR\r",
+        "preco_por": 95.04,
+        "imagem": "https://catalogo.softarte.com.br/imagens/Produtos/0062977.jpg",
+        "categoria": "Choker"
+    },
+    {
+        "codigo": "0062344",
+        "descricao": "CHOKER PRATA ELOS IGUAIS SETE PEDRAS REDONDAS COLORIDAS\r",
+        "preco_por": 89.76,
+        "imagem": "https://catalogo.softarte.com.br/imagens/Produtos/0062344.jpg",
+        "categoria": "Choker"
+    },
+    {
+        "codigo": "0062038",
+        "descricao": "CHOKER PRATA ELOS IGUAIS SETE REDONDOS LISOS PENDURADOS\r",
+        "preco_por": 110.88,
+        "imagem": "https://catalogo.softarte.com.br/imagens/Produtos/0062038.jpg",
+        "categoria": "Choker"
+    },
+    {
+        "codigo": "0063011",
+        "descricao": "CHOKER PRATA ELOS IGUAIS SETE TRIANGULOS PEDRAS\r",
+        "preco_por": 108.24,
+        "imagem": "https://catalogo.softarte.com.br/imagens/Produtos/0063011.jpg",
+        "categoria": "Choker"
+    },
+    {
+        "codigo": "0062366",
+        "descricao": "CHOKER PRATA FIO MEIA CANA\r",
+        "preco_por": 157.08,
+        "imagem": "https://catalogo.softarte.com.br/imagens/Produtos/0062366.jpg",
+        "categoria": "Choker"
+    },
+    {
+        "codigo": "0068292",
+        "descricao": "CHOKER PRATA PEROLA ARROZ 2 MM COM BOLINHAS COM EXTENSOR\r",
+        "preco_por": 168.96,
+        "imagem": "https://catalogo.softarte.com.br/imagens/Produtos/0068292.jpg",
+        "categoria": "Choker"
+    },
+    {
+        "codigo": "0068293",
+        "descricao": "CHOKER PRATA PEROLAS 4 MM COM BOLINHAS EXTENSOR\r",
+        "preco_por": 195.36,
+        "imagem": "https://catalogo.softarte.com.br/imagens/Produtos/0068293.jpg",
+        "categoria": "Choker"
+    },
+    {
+        "codigo": "0067114",
+        "descricao": "CHOKER PRATA VENEZIANA ALONGADA OITO FLORES PEDRAS COLORIDAS\r",
+        "preco_por": 102.96,
+        "imagem": "https://catalogo.softarte.com.br/imagens/Produtos/0067114.jpg",
+        "categoria": "Choker"
+    },
+    {
+        "codigo": "0057410",
+        "descricao": "GARGANTILHA PRATA CHOKER BATIDINHA CINCO CORACOES VAZADOS\r",
+        "preco_por": 108.24,
+        "imagem": "https://catalogo.softarte.com.br/imagens/Produtos/0057410.jpg",
+        "categoria": "Choker"
+    },
+    {
+        "codigo": "0052933",
+        "descricao": "GARGANTILHA PRATA CHOKER ELOS MEDALHINHAS E ZIRCONIAS\r",
+        "preco_por": 143.88,
+        "imagem": "https://catalogo.softarte.com.br/imagens/Produtos/0052933.jpg",
+        "categoria": "Choker"
     }
 ]
