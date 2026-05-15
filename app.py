@@ -6,7 +6,7 @@ app = Flask(__name__)
 app.secret_key = "supersecretkey"
 
 ADMIN_USER = "admin"
-ADMIN_PASS = "JB2026"
+ADMIN_PASS = "JB@2026"
 
 ARQUIVO_PRODUTOS = "produtos.json"
 

@@ -390,5 +390,208 @@
         "preco_por": 143.88,
         "imagem": "https://catalogo.softarte.com.br/imagens/Produtos/0052933.jpg",
         "categoria": "Choker"
+    },
+    {
+        "codigo": "0059245",
+        "descricao": "BELOQUE PRATA CORACAO PEZINHOS VAZADOS\r",
+        "preco_por": 44.88,
+        "imagem": "https://catalogo.softarte.com.br/imagens/Produtos/0059245.jpg",
+        "categoria": "Berloques"
+    },
+    {
+        "codigo": "0069218",
+        "descricao": "BERLOQUE PRATA CORACAO COM CABINHO E FOLHA RESINADO\r",
+        "preco_por": 29.04,
+        "imagem": "https://catalogo.softarte.com.br/imagens/Produtos/0069218.jpg",
+        "categoria": "Berloques"
+    },
+    {
+        "codigo": "0059694",
+        "descricao": "BERLOQUE PRATA ED. FISICA SIMBOLO PLAQUINHA ZIRCONIA VERDE\r",
+        "preco_por": 80.52,
+        "imagem": "https://catalogo.softarte.com.br/imagens/Produtos/0059694.jpg",
+        "categoria": "Berloques"
+    },
+    {
+        "codigo": "0068239",
+        "descricao": "BERLOQUE PRATA MAO DE FATIMA HAMSA ZIRCONIA\r",
+        "preco_por": 33.0,
+        "imagem": "https://catalogo.softarte.com.br/imagens/Produtos/0068239.jpg",
+        "categoria": "Berloques"
+    },
+    {
+        "codigo": "0056174",
+        "descricao": "BERLOQUE PRATA MENINA ZIRCONIA CORACAO ROSA\r",
+        "preco_por": 64.68,
+        "imagem": "https://catalogo.softarte.com.br/imagens/Produtos/0056174.jpg",
+        "categoria": "Berloques"
+    },
+    {
+        "codigo": "0069233",
+        "descricao": "BERLOQUE PRATA MORANGO COM CHOCOLATE RESINADO\r",
+        "preco_por": 46.2,
+        "imagem": "https://catalogo.softarte.com.br/imagens/Produtos/0069233.jpg",
+        "categoria": "Berloques"
+    },
+    {
+        "codigo": "0062706",
+        "descricao": "BERLOQUE PRATA XICARA DE CAFE RESINA\r",
+        "preco_por": 99.0,
+        "imagem": "https://catalogo.softarte.com.br/imagens/Produtos/0062706.jpg",
+        "categoria": "Berloques"
+    },
+    {
+        "codigo": "0065933",
+        "descricao": "BERLOQUE PRATA ABACATE RESINADO\r",
+        "preco_por": 42.24,
+        "imagem": "https://catalogo.softarte.com.br/imagens/Produtos/0065933.jpg",
+        "categoria": "Berloques"
+    },
+    {
+        "codigo": "0053745",
+        "descricao": "PIERCING ACO COM PRATA CORACAO ZIRCONIAS BOLINHA\r",
+        "preco_por": 18.48,
+        "imagem": "https://catalogo.softarte.com.br/imagens/Produtos/0053745.jpg",
+        "categoria": "Piercing"
+    },
+    {
+        "codigo": "0053744",
+        "descricao": "PIERCING ACO COM PRATA FLOR ZIRCONIAS\r",
+        "preco_por": 26.4,
+        "imagem": "https://catalogo.softarte.com.br/imagens/Produtos/0053744.jpg",
+        "categoria": "Piercing"
+    },
+    {
+        "codigo": "0064278",
+        "descricao": "PIERCING AÇO COM PRATA FLOR ZIRCONIAS\r",
+        "preco_por": 17.16,
+        "imagem": "https://catalogo.softarte.com.br/imagens/Produtos/0064278.jpg",
+        "categoria": "Piercing"
+    },
+    {
+        "codigo": "0053599",
+        "descricao": "PIERCING ACO COM PRATA PARA CONCH COROA ZIRCONIAS\r",
+        "preco_por": 60.72,
+        "imagem": "https://catalogo.softarte.com.br/imagens/Produtos/0053599.jpg",
+        "categoria": "Piercing"
+    },
+    {
+        "codigo": "0067404",
+        "descricao": "PIERCING PRATA COM AÇO MEIA BOLA CRAVEJADA BOLINHA\r",
+        "preco_por": 27.72,
+        "imagem": "https://catalogo.softarte.com.br/imagens/Produtos/0067404.jpg",
+        "categoria": "Piercing"
+    },
+    {
+        "codigo": "0062751",
+        "descricao": "PIERCING PRATA 6 PONTOS ZIRCONIAS\r",
+        "preco_por": 22.44,
+        "imagem": "https://catalogo.softarte.com.br/imagens/Produtos/0062751.jpg",
+        "categoria": "Piercing"
+    },
+    {
+        "codigo": "0056628",
+        "descricao": "PIERCING PRATA ARGOLA COM MEIA ARGOLA CRAVEJADA ZIRCONIAS\r",
+        "preco_por": 21.12,
+        "imagem": "https://catalogo.softarte.com.br/imagens/Produtos/0056628.jpg",
+        "categoria": "Piercing"
+    },
+    {
+        "codigo": "0057198",
+        "descricao": "PIERCING PRATA ARGOLA CRAVEJADA ZIRCONIAS\r",
+        "preco_por": 36.96,
+        "imagem": "https://catalogo.softarte.com.br/imagens/Produtos/0057198.jpg",
+        "categoria": "Piercing"
+    },
+    {
+        "codigo": "0066158",
+        "descricao": "PIERCING PRATA ARGOLA DOIS AROS ZIRCONIAS\r",
+        "preco_por": 29.04,
+        "imagem": "https://catalogo.softarte.com.br/imagens/Produtos/0066158.jpg",
+        "categoria": "Piercing"
+    },
+    {
+        "codigo": "0064770",
+        "descricao": "PIERCING PRATA ARGOLA DUAS FILEIRAS ZIRCONIAS\r",
+        "preco_por": 39.6,
+        "imagem": "https://catalogo.softarte.com.br/imagens/Produtos/0064770.jpg",
+        "categoria": "Piercing"
+    },
+    {
+        "codigo": "0067139",
+        "descricao": "PIERCING PRATA ARGOLA DUAS ZIRCONIAS DE GOTA CRISTAL\r",
+        "preco_por": 14.52,
+        "imagem": "https://catalogo.softarte.com.br/imagens/Produtos/0067139.jpg",
+        "categoria": "Piercing"
+    },
+    {
+        "codigo": "0047896",
+        "descricao": "PIERCING PRATA ARGOLA ESTRELA\r",
+        "preco_por": 15.84,
+        "imagem": "https://catalogo.softarte.com.br/imagens/Produtos/0047896.jpg",
+        "categoria": "Piercing"
+    },
+    {
+        "codigo": "0056631",
+        "descricao": "PIERCING PRATA ARGOLA METADE GRUMET\r",
+        "preco_por": 19.8,
+        "imagem": "https://catalogo.softarte.com.br/imagens/Produtos/0056631.jpg",
+        "categoria": "Piercing"
+    },
+    {
+        "codigo": "0053917",
+        "descricao": "PIERCING PRATA ARGOLA NAUTICA\r",
+        "preco_por": 13.2,
+        "imagem": "https://catalogo.softarte.com.br/imagens/Produtos/0053917.jpg",
+        "categoria": "Piercing"
+    },
+    {
+        "codigo": "0063407",
+        "descricao": "PIERCING PRATA ARGOLA TRABALHADA\r",
+        "preco_por": 11.88,
+        "imagem": "https://catalogo.softarte.com.br/imagens/Produtos/0063407.jpg",
+        "categoria": "Piercing"
+    },
+    {
+        "codigo": "0064880",
+        "descricao": "PIERCING PRATA ARGOLA TRABALHADA ZIRCONIAS DIREITO\r",
+        "preco_por": 52.8,
+        "imagem": "https://catalogo.softarte.com.br/imagens/Produtos/0064880.jpg",
+        "categoria": "Piercing"
+    },
+    {
+        "codigo": "0052246",
+        "descricao": "CORRENTE PRATA CORDAO BAIANO 70 CM\r",
+        "preco_por": 303.6,
+        "imagem": "https://catalogo.softarte.com.br/imagens/Produtos/0052246.jpg",
+        "categoria": "Corrente"
+    },
+    {
+        "codigo": "0050450",
+        "descricao": "CORRENTE PRATA 3X1 70 CM\r",
+        "preco_por": 1523.28,
+        "imagem": "https://catalogo.softarte.com.br/imagens/Produtos/0050450.jpg",
+        "categoria": "Corrente"
+    },
+    {
+        "codigo": "0050452",
+        "descricao": "CORRENTE PRATA 3X1 70 CM\r",
+        "preco_por": 710.16,
+        "imagem": "https://catalogo.softarte.com.br/imagens/Produtos/0050452.jpg",
+        "categoria": "Corrente"
+    },
+    {
+        "codigo": "0062074",
+        "descricao": "CORRENTE PRATA BOLINHAS 70 CM\r",
+        "preco_por": 256.08,
+        "imagem": "https://catalogo.softarte.com.br/imagens/Produtos/0062074.png",
+        "categoria": "Corrente"
+    },
+    {
+        "codigo": "0052260",
+        "descricao": "CORRENTE PRATA CARTIER 45 CM\r",
+        "preco_por": 112.2,
+        "imagem": "https://catalogo.softarte.com.br/imagens/Produtos/0052260.jpg",
+        "categoria": "Corrente"
     }
 ]
